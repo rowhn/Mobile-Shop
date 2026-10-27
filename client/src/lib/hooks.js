@@ -40,7 +40,7 @@ export function useDebounced(value, ms = 300) {
 export function usePageTitle(title) {
   useEffect(() => {
     const prev = document.title;
-    document.title = title ? `${title} · NOVA` : 'NOVA';
+   document.title = title ? `${title} · Pranay Mobiles` : 'Pranay Mobiles';
     return () => {
       document.title = prev;
     };
