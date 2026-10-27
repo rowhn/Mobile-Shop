@@ -1,0 +1,19 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5173,
+    // In development the browser talks to /api and Vite forwards it to the Express server.
+    proxy: { '/api': { target: process.env.VITE_DEV_API || 'http://localhost:5000', changeOrigin: true } },
+  },
+  build: {
+    chunkSizeWarningLimit: 700,
+    rollupOptions: {
+      output: {
+        manualChunks: { vendor: ['react', 'react-dom', 'react-router-dom'], motion: ['motion/react'] },
+      },
+    },
+  },
+});

@@ -1,0 +1,7 @@
+/* Contact.css */
+.pm-contact { padding-block: 3rem; }
+.pm-contact__lead { max-width: 36rem; }
+.pm-contact__form { border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.25rem; display: grid; gap: 1rem; }
+@media (min-width: 576px) { .pm-contact__form { padding: 2rem; } }
+.pm-contact__wa { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem; border-radius: 1.25rem; background: #0b3d2a; color: #fff; }
+.pm-contact__wa > svg { color: var(--pm-whatsapp); flex-shrink: 0; }

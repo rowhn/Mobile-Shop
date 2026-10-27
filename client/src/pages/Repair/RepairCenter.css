@@ -1,0 +1,29 @@
+/* RepairCenter.css: /repair landing page */
+.pm-repair__hero { background: var(--pm-ink); color: #fff; border-radius: 2rem; padding: 3.5rem 1.5rem; }
+@media (min-width: 768px) { .pm-repair__hero { padding: 6rem 3.5rem; } }
+.pm-repair__eyebrow { margin: 0 0 0.75rem; font-size: 0.85rem; font-weight: 600; color: #2997ff; }
+.pm-repair__title { max-width: 40rem; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; font-size: clamp(2.1rem, 7vw, 3.75rem); text-wrap: balance; }
+.pm-repair__lead { max-width: 32rem; margin: 1.25rem 0 0; font-size: 1.1rem; color: rgba(255, 255, 255, 0.7); }
+.pm-repair__ghost.btn-link { color: #fff !important; }
+.pm-repair__ghost.btn-link:hover { background: rgba(255, 255, 255, 0.1); }
+.pm-repair__wa { margin: 1.5rem 0 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.75); }
+
+.pm-repair__section { margin-top: 4rem; }
+@media (min-width: 992px) { .pm-repair__section { margin-top: 5rem; } }
+
+.pm-repair__service { display: flex; flex-direction: column; gap: 0.75rem; height: 100%; padding: 1.25rem; border-radius: 1.5rem; background: var(--pm-soft); color: inherit; transition: background 0.2s; }
+.pm-repair__service:hover { background: #ececf1; color: inherit; }
+.pm-repair__service svg { transition: transform 0.2s; }
+.pm-repair__service:hover svg { transform: scale(1.1); }
+@media (min-width: 768px) { .pm-repair__service { padding: 1.5rem; } }
+
+.pm-repair__step { height: 100%; border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.75rem; }
+.pm-repair__num { width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--pm-ink); color: #fff; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+.pm-repair__method { height: 100%; background: var(--pm-soft); border-radius: 1.5rem; padding: 1.75rem; }
+
+.pm-repair__brands { background: var(--pm-soft); border-radius: 2rem; padding: 2rem 1rem; margin-inline: 0; }
+@media (min-width: 768px) { .pm-repair__brands { padding: 3rem 2rem; } }
+.pm-repair__brand-badge { background: #fff; color: var(--pm-ink); padding: 0.5rem 1rem; font-size: 0.85rem; transition: background 0.2s, color 0.2s; }
+.pm-repair__brand:hover .pm-repair__brand-badge { background: var(--pm-ink); color: #fff; }
+.pm-repair__perks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; font-size: 0.95rem; }
+.pm-repair__perks li { display: flex; gap: 0.75rem; }

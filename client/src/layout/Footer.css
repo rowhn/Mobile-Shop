@@ -1,0 +1,14 @@
+/* Footer.css */
+.pm-footer { margin-top: 5rem; background: var(--pm-soft); padding: 3.5rem 0 5.5rem; }
+.pm-footer__brand { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.04em; margin: 0; }
+.pm-footer__tagline { margin: 0.6rem 0 1.25rem; max-width: 22rem; color: var(--pm-muted); font-size: 0.9rem; }
+.pm-footer__title { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.9rem; }
+.pm-footer__links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; font-size: 0.9rem; }
+.pm-footer__links a { color: var(--pm-muted); }
+.pm-footer__links a:hover { color: var(--pm-ink); }
+.pm-footer__bottom { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--pm-line); display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between; font-size: 0.78rem; color: var(--pm-muted); }
+.pm-footer__bottom a { color: var(--pm-muted); }
+.pm-footer__bottom a:hover { color: var(--pm-ink); }
+@media (min-width: 576px) { .pm-footer__bottom { flex-direction: row; } }
+.pm-footer__follow { margin: 0 0 0.6rem; font-size: 0.9rem; font-weight: 600; }
+.pm-footer__links a { display: inline-flex; align-items: center; gap: 0.4rem; }

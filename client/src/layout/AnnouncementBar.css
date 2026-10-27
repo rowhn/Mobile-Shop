@@ -1,0 +1,4 @@
+/* AnnouncementBar.css */
+.pm-announce { background: var(--pm-ink); color: #fff; text-align: center; font-size: 0.8rem; padding: 0.5rem 1rem; }
+.pm-announce a { color: #fff; }
+.pm-announce a:hover { text-decoration: underline; }

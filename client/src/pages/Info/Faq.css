@@ -1,0 +1,8 @@
+/* Faq.css */
+.pm-faq { max-width: 48rem; padding-block: 3rem; }
+.pm-faq__chip { border: 1px solid var(--pm-line); background: #fff; border-radius: 50rem; padding: 0.35rem 1rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s; }
+.pm-faq__chip:hover { border-color: var(--pm-ink); }
+.pm-faq__chip.is-on { background: var(--pm-ink); border-color: var(--pm-ink); color: #fff; }
+.pm-faq__list { --bs-accordion-btn-focus-box-shadow: none; --bs-accordion-active-bg: transparent; --bs-accordion-active-color: var(--pm-ink); border-block: 1px solid var(--pm-soft); }
+.pm-faq__list .accordion-button { font-size: 1.05rem; font-weight: 500; padding-block: 1.25rem; box-shadow: none; }
+.pm-faq__list .accordion-body { color: #3a3a3c; line-height: 1.7; padding-top: 0; }

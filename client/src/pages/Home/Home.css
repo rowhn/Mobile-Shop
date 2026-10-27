@@ -1,0 +1,9 @@
+/* Home.css: layout for the homepage sections (each section has its own css file too) */
+.pm-home__strip { background: var(--pm-soft); padding: 0.5rem 1rem; text-align: center; font-size: 0.8rem; color: #424245; }
+.pm-home__cats { margin-top: 3rem; }
+.pm-home__cat { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; padding: 1.25rem 0.5rem; border-radius: 1.5rem; background: var(--pm-soft); color: var(--pm-ink); text-align: center; font-size: 0.85rem; font-weight: 500; transition: background 0.2s, transform 0.2s; }
+@media (min-width: 768px) { .pm-home__cat { font-size: 0.95rem; padding: 1.75rem 1rem; } }
+.pm-home__cat:hover { background: #ececf1; color: var(--pm-ink); transform: translateY(-2px); }
+.pm-home__cat-img { width: 3rem; height: 3rem; object-fit: contain; }
+.pm-home__loading, .pm-home__promos, .pm-home__perks { margin-top: 4rem; }
+@media (min-width: 992px) { .pm-home__loading, .pm-home__promos, .pm-home__perks { margin-top: 5rem; } }

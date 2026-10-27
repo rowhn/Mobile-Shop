@@ -1,0 +1,4 @@
+/* Support.css */
+.pm-support { padding-block: 3rem; }
+.pm-support__card { display: block; height: 100%; background: var(--pm-soft); border-radius: 1.5rem; padding: 1.75rem; color: inherit; transition: background 0.2s; }
+.pm-support__card:hover { background: #ececf1; color: inherit; }

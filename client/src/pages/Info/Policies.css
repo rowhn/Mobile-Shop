@@ -1,0 +1,6 @@
+/* Policies.css */
+.pm-policies { max-width: 48rem; padding-block: 3rem; }
+.pm-policies__list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--pm-line); border-radius: 1.5rem; overflow: hidden; }
+.pm-policies__list li + li { border-top: 1px solid var(--pm-soft); }
+.pm-policies__item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem; color: inherit; }
+.pm-policies__item:hover { background: var(--pm-soft); color: inherit; }

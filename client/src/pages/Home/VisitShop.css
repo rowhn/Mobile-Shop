@@ -1,0 +1,7 @@
+/* VisitShop.css */
+.pm-visit { margin-top: 4rem; }
+@media (min-width: 992px) { .pm-visit { margin-top: 5rem; } }
+.pm-visit__card { background: var(--pm-soft); border-radius: 2rem; padding: 1.5rem; }
+@media (min-width: 768px) { .pm-visit__card { padding: 3rem; } }
+.pm-visit__eyebrow { margin: 0 0 0.25rem; font-size: 0.85rem; font-weight: 600; color: var(--pm-accent); }
+.pm-visit__map { border-radius: 1.5rem; overflow: hidden; }

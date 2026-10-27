@@ -1,0 +1,8 @@
+/* ShopInfo.css: address / contact block (footer + contact page) */
+.pm-shopinfo__list { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: 0.6rem; font-size: 0.9rem; color: var(--pm-muted); }
+.pm-shopinfo__list li { display: flex; gap: 0.6rem; align-items: flex-start; }
+.pm-shopinfo__list svg { margin-top: 2px; flex-shrink: 0; }
+.pm-shopinfo__list a { color: inherit; }
+.pm-shopinfo__list a:hover { color: var(--pm-ink); }
+.pm-shopinfo__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.pm-shopinfo__map { margin-top: 1.25rem; border-radius: 1.25rem; overflow: hidden; border: 1px solid var(--pm-line); }

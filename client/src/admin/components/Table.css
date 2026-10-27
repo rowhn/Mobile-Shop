@@ -1,0 +1,9 @@
+/* Table.css: admin data tables */
+.pm-admin-table { background: #fff; border: 1px solid var(--pm-line); border-radius: 1rem; }
+.pm-admin-table table { min-width: 40rem; font-size: 0.9rem; }
+.pm-admin-table thead th { background: #fafafc; font-size: 0.72rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: var(--pm-muted); padding: 0.8rem 1rem; white-space: nowrap; }
+.pm-admin-table td { padding: 0.75rem 1rem; }
+.pm-admin-table tbody tr:last-child td { border-bottom: 0; }
+.pm-admin-table tr.is-clickable { cursor: pointer; }
+.pm-admin-table tr.is-clickable:hover > * { background: #fafafc; }
+.pm-admin-table .text-end-actions { width: 6rem; text-align: right; }

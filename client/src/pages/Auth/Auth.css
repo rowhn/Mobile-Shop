@@ -1,0 +1,10 @@
+/* Auth.css: centred sign-in / register card (Login.jsx, Register.jsx, AuthShell.jsx) */
+.pm-auth { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding-block: 3rem; }
+.pm-auth__box { width: 100%; max-width: 28rem; }
+.pm-auth__brand { text-align: center; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.04em; margin: 0; }
+.pm-auth__title { text-align: center; margin: 1.5rem 0 0; font-size: 1.9rem; font-weight: 600; letter-spacing: -0.02em; }
+.pm-auth__sub { text-align: center; margin: 0.5rem 0 0; color: var(--pm-muted); }
+.pm-auth__card { margin-top: 2rem; border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.5rem; }
+.pm-auth__foot { text-align: center; margin: 1.5rem 0 0; font-size: 0.9rem; color: var(--pm-muted); }
+.pm-auth__foot a { font-weight: 500; color: var(--pm-accent); }
+@media (min-width: 576px) { .pm-auth__card { padding: 2rem; } }

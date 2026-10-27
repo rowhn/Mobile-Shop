@@ -1,0 +1,20 @@
+/* ProductRail.css: swipeable product row (phones + tablets), grid on desktop */
+.pm-rail { margin-top: 4rem; }
+@media (min-width: 992px) { .pm-rail { margin-top: 5rem; } }
+.pm-rail__all { align-items: center; gap: 0.2rem; font-weight: 500; color: var(--pm-accent); white-space: nowrap; }
+.pm-rail__wrap { position: relative; }
+.pm-rail__track { display: flex; gap: 1rem; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 0.75rem; margin-inline: -0.75rem; padding: 0 0.75rem 0.75rem; scrollbar-width: none; touch-action: pan-x pan-y; }
+.pm-rail__track::-webkit-scrollbar { display: none; }
+.pm-rail__item { flex: 0 0 68%; max-width: 20rem; scroll-snap-align: start; }
+@media (min-width: 576px) { .pm-rail__item { flex-basis: 42%; } }
+@media (min-width: 768px) { .pm-rail__item { flex-basis: 31%; } }
+
+/* Prev / Next arrows: sit beside the section title (phones + tablets) */
+.pm-rail__actions { display: flex; align-items: center; gap: 1rem; }
+.pm-rail__arrows { display: flex; gap: 0.5rem; }
+.pm-rail__arrow { width: 2.5rem; height: 2.5rem; border: 1px solid var(--pm-line); border-radius: 50%; background: #fff; color: var(--pm-ink); display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.pm-rail__arrow:hover { background: var(--pm-soft); }
+@media (min-width: 992px) {
+  .pm-rail__track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem 1.5rem; overflow: visible; margin-inline: 0; padding: 0; }
+  .pm-rail__item { flex: none; max-width: none; }
+}

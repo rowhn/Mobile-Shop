@@ -1,0 +1,5 @@
+/* Toast.css: small pop-up messages at the bottom of the screen */
+.pm-toasts { position: fixed; left: 0; right: 0; bottom: 5.5rem; z-index: 2000; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 0 1rem; pointer-events: none; }
+.pm-toast { pointer-events: auto; max-width: 28rem; border-radius: 50rem; padding: 0.7rem 1.25rem; font-size: 0.9rem; font-weight: 500; background: var(--pm-ink); color: #fff; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); }
+.pm-toast--error { background: var(--bs-danger); }
+@media (min-width: 768px) { .pm-toasts { bottom: 1.5rem; } }

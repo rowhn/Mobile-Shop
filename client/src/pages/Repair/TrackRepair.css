@@ -1,0 +1,18 @@
+/* TrackRepair.css: /repair/track */
+.pm-track { max-width: 48rem; padding-block: 2.5rem; }
+.pm-track__form { margin: 2rem 0 0; border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.25rem; }
+.pm-track__ref { text-transform: uppercase; letter-spacing: 0.05em; }
+.pm-track__result { margin-top: 2rem; display: grid; gap: 1.5rem; }
+.pm-track__flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.35rem; text-align: center; }
+.pm-track__bar { height: 6px; border-radius: 3px; background: var(--pm-line); }
+.pm-track__bar.is-done { background: var(--bs-success); }
+.pm-track__step { display: block; margin-top: 0.5rem; font-size: 0.62rem; color: var(--pm-muted); overflow-wrap: anywhere; }
+.pm-track__step.is-done { color: var(--pm-ink); font-weight: 500; }
+@media (min-width: 576px) { .pm-track__step { font-size: 0.78rem; } .pm-track__form { padding: 1.5rem; } }
+.pm-track__quote { border: 2px solid var(--pm-accent); border-radius: 1.5rem; padding: 1.5rem; }
+.pm-track__final { background: var(--pm-soft); border-radius: 1rem; padding: 1rem; margin: 0; }
+.pm-track__facts { background: var(--pm-soft); border-radius: 1.5rem; padding: 1.25rem; margin: 0; font-size: 0.95rem; --bs-gutter-y: 1rem; }
+.pm-track__timeline { list-style: none; margin: 0; padding: 0 0 0 1.5rem; border-left: 2px solid var(--pm-line); display: grid; gap: 1.25rem; }
+.pm-track__timeline li { position: relative; }
+.pm-track__dot { position: absolute; left: -1.95rem; top: 0.3rem; width: 0.75rem; height: 0.75rem; border-radius: 50%; background: var(--pm-line); }
+.pm-track__dot.is-latest { background: var(--pm-accent); box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.2); }

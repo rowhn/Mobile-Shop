@@ -1,0 +1,9 @@
+/* QtyStepper.css */
+.pm-qty { display: inline-flex; align-items: center; border: 1px solid var(--pm-line); border-radius: 50rem; height: 2.75rem; }
+.pm-qty button { width: 2.75rem; height: 100%; border: 0; border-radius: 50%; background: transparent; display: flex; align-items: center; justify-content: center; color: var(--pm-ink); }
+.pm-qty button:hover:not(:disabled) { background: var(--pm-soft); }
+.pm-qty button:disabled { opacity: 0.3; }
+.pm-qty span { min-width: 2rem; text-align: center; font-weight: 500; font-variant-numeric: tabular-nums; }
+.pm-qty--compact { height: 2rem; }
+.pm-qty--compact button { width: 2rem; }
+.pm-qty--compact span { min-width: 1.5rem; font-size: 0.9rem; }

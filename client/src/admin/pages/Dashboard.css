@@ -1,0 +1,14 @@
+/* Dashboard.css: stat tiles, sales chart, recent orders */
+.pm-admin-stat__value { font-size: 1.9rem; font-weight: 600; letter-spacing: -0.02em; margin: 0.15rem 0; }
+.pm-admin-stat--link { transition: border-color 0.2s; }
+.pm-admin-stat--link:hover { border-color: var(--pm-ink); }
+.pm-admin-warn { color: #b25e09; }
+.pm-admin-chart { display: flex; align-items: flex-end; gap: 6px; height: 11rem; }
+.pm-admin-chart__col { position: relative; flex: 1; height: 100%; display: flex; align-items: flex-end; }
+.pm-admin-chart__bar { width: 100%; border-radius: 6px 6px 0 0; background: rgba(0, 113, 227, 0.8); transition: background 0.2s; }
+.pm-admin-chart__col:hover .pm-admin-chart__bar { background: var(--pm-accent); }
+.pm-admin-chart__tip { display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); z-index: 5; white-space: nowrap; background: var(--pm-ink); color: #fff; font-size: 0.72rem; padding: 0.25rem 0.5rem; border-radius: 0.5rem; pointer-events: none; }
+.pm-admin-chart__col:hover .pm-admin-chart__tip { display: block; }
+.pm-admin-recent { list-style: none; margin: 0; padding: 0; }
+.pm-admin-recent li { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.65rem 0; border-bottom: 1px solid var(--pm-soft); font-size: 0.9rem; }
+.pm-admin-recent li:last-child { border-bottom: 0; }

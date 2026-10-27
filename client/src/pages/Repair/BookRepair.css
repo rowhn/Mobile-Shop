@@ -1,0 +1,51 @@
+/* BookRepair.css: /repair/book wizard */
+.pm-book { max-width: 56rem; padding-block: 2.5rem; }
+.pm-book--done { max-width: 40rem; text-align: center; padding-block: 4rem; }
+.pm-book__narrow { max-width: 28rem; }
+.pm-book__h { font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem; }
+.pm-book__progress { list-style: none; margin: 2rem 0; padding: 0; display: flex; gap: 0.5rem; }
+.pm-book__progress li { flex: 1; min-width: 0; }
+.pm-book__bar { height: 6px; border-radius: 3px; background: var(--pm-line); transition: background 0.2s; }
+.pm-book__bar.is-done { background: var(--pm-ink); }
+.pm-book__bar-label { display: block; margin-top: 0.5rem; font-size: 0.72rem; color: var(--pm-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pm-book__bar-label.is-current { color: var(--pm-ink); font-weight: 600; }
+@media (min-width: 576px) { .pm-book__bar-label { font-size: 0.85rem; } }
+.pm-book__err { margin: 0.5rem 0; font-size: 0.85rem; font-weight: 500; color: var(--bs-danger); }
+.pm-book__link { border: 0; background: none; padding: 0; font-size: 0.9rem; color: var(--pm-accent); }
+
+.pm-book__chip { border: 1px solid var(--pm-line); background: #fff; border-radius: 50rem; padding: 0.5rem 1.25rem; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+.pm-book__chip:hover { border-color: var(--pm-ink); }
+.pm-book__chip.is-on { background: var(--pm-ink); border-color: var(--pm-ink); color: #fff; }
+
+/* selectable option cards (device, issue, method) */
+.pm-book__opt { display: block; width: 100%; height: 100%; text-align: left; background: #fff; border: 1px solid var(--pm-line); border-radius: 1rem; padding: 1rem; transition: border-color 0.2s, box-shadow 0.2s; color: inherit; }
+.pm-book__opt--row { display: flex; align-items: center; gap: 1rem; }
+.pm-book__opt:hover { border-color: var(--pm-ink); }
+.pm-book__opt.is-on, .pm-book__opt[aria-checked='true'] { border-color: var(--pm-accent); box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.3); }
+.pm-book__check { width: 1.25rem; height: 1.25rem; margin-top: 0.25rem; flex-shrink: 0; border: 1px solid var(--pm-line); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.pm-book__check.is-on { background: var(--pm-accent); border-color: var(--pm-accent); color: #fff; }
+
+/* date strip scrolls sideways on phones */
+.pm-book__dates { display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.5rem; }
+.pm-book__date { flex: 0 0 4.5rem; border: 1px solid var(--pm-line); background: #fff; border-radius: 1rem; padding: 0.75rem 0; text-align: center; transition: all 0.2s; }
+.pm-book__date:hover:not(:disabled) { border-color: var(--pm-ink); }
+.pm-book__date:disabled { opacity: 0.35; cursor: not-allowed; }
+.pm-book__date.is-on { background: var(--pm-ink); border-color: var(--pm-ink); color: #fff; }
+
+.pm-book__slot { width: 100%; display: flex; justify-content: space-between; gap: 0.5rem; border: 1px solid var(--pm-line); background: #fff; border-radius: 0.75rem; padding: 0.75rem 1rem; font-size: 0.9rem; transition: border-color 0.2s; }
+.pm-book__slot:hover:not(:disabled) { border-color: var(--pm-ink); }
+.pm-book__slot:disabled { opacity: 0.4; cursor: not-allowed; }
+.pm-book__slot.is-on { border-color: var(--pm-accent); box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.3); }
+
+.pm-book__summary { margin-top: 2rem; background: var(--pm-soft); border-radius: 1.5rem; padding: 1.5rem; font-size: 0.95rem; }
+
+/* sticky price + navigation bar */
+.pm-book__bottom { position: sticky; bottom: 0; z-index: 5; margin-top: 2rem; padding: 1rem 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border-top: 1px solid var(--pm-line); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+@media (max-width: 767.98px) { .pm-book__bottom { padding-right: 4.75rem; } } /* leave room for the floating WhatsApp button */
+
+/* confirmation */
+.pm-book__tick { width: 4rem; height: 4rem; margin: 0 auto 1.5rem; border-radius: 50%; background: var(--bs-success); color: #fff; display: flex; align-items: center; justify-content: center; }
+.pm-book__ref { display: inline-block; margin-top: 1.5rem; background: var(--pm-soft); border-radius: 1rem; padding: 1.25rem 2rem; }
+.pm-book__ref-label { margin: 0; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--pm-muted); }
+.pm-book__ref-code { margin: 0.25rem 0 0; font-size: 1.75rem; font-weight: 700; letter-spacing: 0.12em; }
+.pm-book__receipt { max-width: 28rem; margin: 2rem auto 0; border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.5rem; text-align: left; font-size: 0.95rem; }

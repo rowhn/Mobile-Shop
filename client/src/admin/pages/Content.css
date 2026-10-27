@@ -1,0 +1,4 @@
+/* Content.css: FAQ / Pages tabs */
+.pm-admin-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.pm-admin-tabs__tab { border: 0; border-radius: 50rem; padding: 0.5rem 1.25rem; font-size: 0.9rem; font-weight: 500; background: #fff; color: var(--pm-ink); box-shadow: inset 0 0 0 1px var(--pm-line); }
+.pm-admin-tabs__tab.is-active { background: var(--pm-ink); color: #fff; box-shadow: none; }

@@ -1,0 +1,14 @@
+/* MarqueeBanner.css: scrolling ad strip */
+.pm-marquee { overflow: hidden; background: linear-gradient(90deg, #0b57d0, #0071e3 50%, #0b57d0); color: #fff; font-size: 0.85rem; font-weight: 500; }
+.pm-marquee__track { display: flex; width: max-content; animation: pm-marquee var(--pm-marquee-speed, 28s) linear infinite; }
+.pm-marquee:hover .pm-marquee__track, .pm-marquee:active .pm-marquee__track { animation-play-state: paused; }
+.pm-marquee__group { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; }
+.pm-marquee__item { padding: 0.55rem 2.25rem; white-space: nowrap; position: relative; }
+.pm-marquee__item::after { content: ''; position: absolute; right: 0; top: 50%; width: 5px; height: 5px; margin-top: -2.5px; border-radius: 50%; background: rgba(255, 255, 255, 0.55); }
+@keyframes pm-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 575.98px) { .pm-marquee { font-size: 0.78rem; } .pm-marquee__item { padding-inline: 1.5rem; } }
+@media (prefers-reduced-motion: reduce) {
+  .pm-marquee { overflow-x: auto; }
+  .pm-marquee__track { animation: none; }
+  .pm-marquee__group[aria-hidden] { display: none; }
+}

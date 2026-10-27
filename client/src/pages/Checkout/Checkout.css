@@ -1,0 +1,6 @@
+/* Checkout.css: selectable cards (saved addresses, payment methods) */
+.pm-checkout__choice { display: block; text-align: left; font-size: 0.9rem; background: #fff; border: 1px solid var(--pm-line); border-radius: 1rem; padding: 1rem; transition: border-color 0.2s, box-shadow 0.2s; }
+.pm-checkout__choice:hover { border-color: var(--pm-ink); }
+.pm-checkout__choice.is-selected { border-color: var(--pm-accent); box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2); }
+.pm-checkout__pay { display: flex; align-items: flex-start; gap: 1rem; cursor: pointer; }
+.pm-checkout__check { cursor: pointer; }

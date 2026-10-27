@@ -1,0 +1,11 @@
+/* Button.css: buttons used everywhere (see Button.jsx) */
+.pm-btn { min-height: 2.75rem; padding-inline: 1.5rem; white-space: nowrap; }
+.pm-btn.btn-sm { min-height: 2.25rem; padding-inline: 1rem; }
+.pm-btn.btn-lg { min-height: 3.1rem; }
+.pm-btn.btn-link { text-decoration: none; }
+.pm-btn.btn-link:hover { background: rgba(0, 113, 227, 0.08); }
+.btn-whatsapp { --bs-btn-color: #fff; --bs-btn-bg: var(--pm-whatsapp); --bs-btn-border-color: var(--pm-whatsapp); --bs-btn-hover-color: #fff; --bs-btn-hover-bg: var(--pm-whatsapp-dark); --bs-btn-hover-border-color: var(--pm-whatsapp-dark); }
+
+.pm-icon-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border: 0; border-radius: 50%; background: transparent; color: var(--pm-ink); transition: background 0.2s; flex-shrink: 0; }
+.pm-icon-btn:hover { background: var(--pm-soft); }
+.pm-icon-btn__badge { position: absolute; top: 1px; right: 1px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 9px; background: var(--pm-accent); color: #fff; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; }

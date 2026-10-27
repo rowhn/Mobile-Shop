@@ -1,0 +1,8 @@
+/* OrderSummary.css: totals box (Cart + Checkout). Stacks under the list on mobile, sticky on desktop. */
+.pm-summary { background: var(--pm-soft); border-radius: 1.5rem; padding: 1.5rem; }
+.pm-summary__list { display: grid; gap: 0.75rem; margin: 0; font-size: 0.95rem; }
+.pm-summary__row { display: flex; justify-content: space-between; gap: 1rem; }
+.pm-summary__row dt, .pm-summary__row dd { margin: 0; }
+.pm-summary__total { border-top: 1px solid var(--pm-line); padding-top: 1rem; font-size: 1.15rem; font-weight: 600; }
+.pm-summary__total dt { font-weight: 600; }
+@media (min-width: 992px) { .pm-summary--sticky { position: sticky; top: 6rem; } }

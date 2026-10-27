@@ -1,0 +1,6 @@
+/* Form.css: field helpers on top of Bootstrap's form controls */
+.pm-field-error { margin-top: 0.35rem; font-size: 0.78rem; font-weight: 500; color: var(--bs-danger); }
+.pm-toggle { min-height: 1.5rem; }
+.pm-toggle .form-check-input { cursor: pointer; margin-top: 0.2rem; }
+.pm-toggle .form-check-label { cursor: pointer; }
+.pm-toggle__desc { font-size: 0.78rem; }

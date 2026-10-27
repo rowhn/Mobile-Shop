@@ -1,0 +1,3 @@
+/* CmsPage.css: narrow reading column for About / policy pages */
+.pm-cms { max-width: 48rem; padding-block: 3rem; }
+.pm-cms__back { display: inline-flex; align-items: center; gap: 0.25rem; margin-bottom: 1rem; font-size: 0.9rem; color: var(--pm-accent); }

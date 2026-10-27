@@ -1,0 +1,4 @@
+/* CouponBox.css */
+.pm-coupon { margin-top: 1.25rem; }
+.pm-coupon--applied { display: flex; align-items: center; justify-content: space-between; background: #fff; border-radius: 0.75rem; padding: 0.75rem 1rem; font-size: 0.9rem; }
+.pm-coupon__remove { border: 0; background: none; color: var(--pm-accent); font-weight: 500; padding: 0; }

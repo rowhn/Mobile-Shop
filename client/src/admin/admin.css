@@ -1,0 +1,10 @@
+/* admin.css: shared look for the whole admin dashboard (loaded by AdminLayout) */
+.pm-admin-card { background: #fff; border: 1px solid var(--pm-line); border-radius: 1rem; padding: 1.25rem; }
+.pm-admin-card--soft { background: var(--pm-soft); }
+.pm-admin-muted-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--pm-muted); margin-bottom: 0.15rem; }
+.pm-admin-thumb { width: 2.5rem; height: 2.5rem; border-radius: 0.5rem; object-fit: cover; flex-shrink: 0; }
+.pm-admin-thumb--empty { display: flex; align-items: center; justify-content: center; background: var(--pm-soft); color: var(--pm-muted); font-size: 0.75rem; }
+.pm-admin-danger-hover:hover { color: var(--bs-danger); }
+.pm-admin-sticky-save { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1020; border-top: 1px solid var(--pm-line); background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); padding: 0.75rem 1rem; }
+@media (min-width: 992px) { .pm-admin-sticky-save { left: 17rem; } }
+.pm-admin-sticky-save__inner { max-width: 72rem; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }

@@ -1,0 +1,40 @@
+/* Account.css: shared styles for the "My account" area (layout, orders, repairs, profile, order detail) */
+.pm-account__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.pm-account__tabs { display: flex; gap: 0.25rem; overflow-x: auto; border-bottom: 1px solid var(--pm-soft); margin-bottom: 1.75rem; -webkit-overflow-scrolling: touch; }
+.pm-account__tab { margin-bottom: -1px; white-space: nowrap; padding: 0.75rem 1rem; border-bottom: 2px solid transparent; font-weight: 500; color: var(--pm-muted); transition: color 0.2s, border-color 0.2s; }
+.pm-account__tab:hover { color: var(--pm-ink); }
+.pm-account__tab.is-active { color: var(--pm-ink); border-bottom-color: var(--pm-ink); }
+
+.pm-account__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.pm-account__card { display: block; border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.25rem; color: inherit; transition: border-color 0.2s; }
+a.pm-account__card:hover { border-color: var(--pm-ink); color: inherit; }
+.pm-account__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.pm-account__thumbs { display: flex; gap: 0.5rem; margin-top: 1rem; overflow: hidden; }
+.pm-account__thumb { width: 3.5rem; height: 3.5rem; flex-shrink: 0; border-radius: 0.75rem; }
+
+/* Order detail */
+.pm-order__back { display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.9rem; color: var(--pm-accent); margin-bottom: 1rem; }
+.pm-order__placed { background: var(--pm-soft); border-radius: 1.5rem; padding: 2rem 1rem; text-align: center; margin-bottom: 2rem; }
+.pm-order__tick { width: 3.5rem; height: 3.5rem; margin: 0 auto 1rem; border-radius: 50%; background: var(--bs-success); color: #fff; display: flex; align-items: center; justify-content: center; }
+.pm-order__steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; list-style: none; padding: 0; margin: 2rem 0; }
+.pm-order__step { text-align: center; font-size: 0.75rem; color: var(--pm-muted); }
+.pm-order__step::before { content: ''; display: block; height: 6px; border-radius: 3px; background: var(--pm-line); margin-bottom: 0.5rem; }
+.pm-order__step.is-done { color: var(--pm-ink); font-weight: 500; }
+.pm-order__step.is-done::before { background: var(--bs-success); }
+@media (min-width: 576px) { .pm-order__step { font-size: 0.875rem; } }
+.pm-order__ship { display: flex; align-items: center; gap: 0.5rem; background: var(--pm-soft); border-radius: 1rem; padding: 1rem; font-size: 0.9rem; margin-top: 1.5rem; }
+.pm-order__items { list-style: none; margin: 0; padding: 0; border: 1px solid var(--pm-line); border-radius: 1.5rem; }
+.pm-order__item { display: flex; gap: 1rem; padding: 1rem; border-bottom: 1px solid var(--pm-soft); }
+.pm-order__item:last-child { border-bottom: 0; }
+.pm-order__img { width: 5rem; height: 5rem; flex-shrink: 0; border-radius: 1rem; }
+.pm-order__sum { background: var(--pm-soft); border-radius: 1.5rem; padding: 1.25rem; }
+.pm-order__sum dl { margin: 0; display: grid; gap: 0.5rem; }
+.pm-order__sum dl > div { display: flex; justify-content: space-between; }
+.pm-order__sum dd { margin: 0; }
+.pm-order__total { border-top: 1px solid var(--pm-line); padding-top: 0.75rem; font-size: 1.1rem; font-weight: 600; }
+.pm-order__box { border: 1px solid var(--pm-line); border-radius: 1.5rem; padding: 1.25rem; font-size: 0.9rem; }
+
+/* Profile */
+.pm-profile__addr { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; border: 1px solid var(--pm-line); border-radius: 1rem; padding: 1rem; font-size: 0.9rem; }
+.pm-profile__remove { border: 0; background: transparent; color: var(--pm-muted); padding: 0.25rem; }
+.pm-profile__remove:hover { color: var(--bs-danger); }

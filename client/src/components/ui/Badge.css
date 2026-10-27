@@ -1,0 +1,9 @@
+/* Badge.css: small status pills */
+.pm-badge { display: inline-flex; align-items: center; border-radius: 50rem; padding: 0.15rem 0.65rem; font-size: 0.75rem; font-weight: 500; white-space: nowrap; }
+.pm-badge--blue { background: #eff6ff; color: #1d4ed8; }
+.pm-badge--green { background: #ecfdf5; color: #047857; }
+.pm-badge--amber { background: #fffbeb; color: #92400e; }
+.pm-badge--red { background: #fef2f2; color: #b91c1c; }
+.pm-badge--violet { background: #f5f3ff; color: #6d28d9; }
+.pm-badge--gray { background: var(--pm-soft); color: var(--pm-muted); }
+.pm-badge--dark { background: var(--pm-ink); color: #fff; }

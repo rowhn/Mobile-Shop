@@ -1,0 +1,10 @@
+/* SocialLinks.css */
+.pm-social { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
+.pm-social__link { width: 2.5rem; height: 2.5rem; border-radius: 50%; background: #fff; border: 1px solid var(--pm-line); color: var(--pm-ink); display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s; }
+.pm-social__link:hover { transform: translateY(-2px); color: #fff; border-color: transparent; }
+.pm-social__link--instagram:hover { background: linear-gradient(45deg, #f09433, #dc2743 55%, #bc1888); }
+.pm-social__link--facebook:hover { background: #1877f2; }
+.pm-social__link--youtube:hover { background: #ff0000; }
+.pm-social__link--x:hover { background: #000; }
+.pm-social__link--telegram:hover { background: #229ed9; }
+.pm-social__link--justdial:hover { background: #ff7a00; }
